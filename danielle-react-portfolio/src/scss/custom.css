@@ -3,8 +3,13 @@
   src: local("PalmerLake"), url("../fonts/WOFF/PalmerLakePrint-Regular.woff") format("woff");
 }
 
-.footer {
-  padding: 3em;
+.about-div {
+  border: 1px solid #333;
+  padding: 2em;
+}
+
+.about-div span {
+  font-weight: bold;
 }
 
 .footer-color {
@@ -15,7 +20,7 @@
 .connect-title {
   text-align: right;
   padding-right: 90px;
-  font-family: "PalmerLake", sans-serif;
+  font-family: "PalmerLake", serif;
   text-transform: uppercase;
 }
 
@@ -52,5 +57,11 @@
 
 .about-div {
   background-color: #e4d2e4;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding: 3em;
+  }
 }
 /*# sourceMappingURL=custom.css.map */

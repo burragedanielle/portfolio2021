@@ -11,15 +11,15 @@ const Footer = () => {
             <div className="footer">
                 <Container>
                     <Row className="footer-color">
-                        <Col className="contact-info" lg={9}>
-                            <Col className="connect-title" xl={4} lg={4} md={4}>Let's Connect</Col>
-                            <Col xl={4} lg={4} md={4}>
+                        <Col className="contact-info" xs={12} sm={12} xl={9} lg={9} md={9}>
+                            <Col className="connect-title" xs={12} sm={12} xl={4} lg={4} md={4}>Let's Connect</Col>
+                            <Col xs={12} sm={12} xl={4} lg={4} md={4}>
                                 <a href={"mailto:burragedanielle@gmail.com"}><HiOutlineMail /></a>
                             </Col>
-                            <Col xl={4} lg={4} md={4}>
+                            <Col xl={4} sm={12} xs={12} lg={4} md={4}>
                                 <a href={"https://github.com/burragedanielle"}><FaGithub /></a>
                             </Col>
-                            <Col xl={4} lg={4} md={4}>
+                            <Col xl={4} sm={12} xs={12} lg={4} md={4}>
                                 <a href={"https://www.linkedin.com/in/danielleburrage"}><FaLinkedin /></a>
                             </Col>
                         </Col>
