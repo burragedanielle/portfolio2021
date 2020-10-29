@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "PalmerLake";
+  src: local("PalmerLake"), url("../fonts/WOFF/PalmerLakePrint-Regular.woff") format("woff");
+}
+
+.footer {
+  padding: 3em;
+}
+
+.footer-color {
+  background-color: #e4d2e4;
+  padding: 1em;
+}
+
+.connect-title {
+  text-align: right;
+  padding-right: 90px;
+  font-family: "PalmerLake", sans-serif;
+  text-transform: uppercase;
+}
+
+.contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2em;
+}
+
+.contact-info a {
+  color: #333;
+}
+
+.contact-info a:hover {
+  color: #fff;
+}
+
+.jumbotron {
+  height: calc(100vh);
+  border: 1px solid #333;
+}
+
+.head-title {
+  font-family: "Yeseva One", serif;
+}
+
+.about-div {
+  background-color: #e4d2e4;
+}
+/*# sourceMappingURL=custom.css.map */
