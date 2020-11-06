@@ -11,7 +11,6 @@ const About = () => {
                         <h1>Who I Am</h1>
                     </Row>
                     <Row>
-                        <hr />
                         <ul className="about-list">
                             <li><span>I am a developer with the eye of a designer and wit of a marketer.</span> Not only do I have the ability to come up with a great idea — I have the technical skills to execute it. </li>
                             <li>

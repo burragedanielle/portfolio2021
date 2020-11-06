@@ -10,6 +10,12 @@ $second-title-font: "PalmerLake", serif;
 
 // Customizations
 
+// General
+
+.section-title {
+  margin-top: 2em;
+}
+
 // About Me
 
 .about-div {
@@ -19,6 +25,58 @@ $second-title-font: "PalmerLake", serif;
   span {
     font-weight: bold;
   }
+
+  li {
+    margin: 1em 0;
+  }
+}
+
+//Skills Section
+
+.skills {
+  margin-bottom: 2em;
+}
+
+.skills-div {
+  ul {
+    list-style-type: none;
+    font-size: 2em;
+  }
+
+  li {
+    text-align: center;
+    padding: 0 1em;
+
+    h3 {
+      font-size: 16px;
+    }
+  }
+}
+
+.skills-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//Projects
+.projects-section {
+  border: 1px solid #333;
+}
+
+.project-about,
+.project-details {
+  h2 {
+    font-family: $second-title-font;
+  }
+}
+
+.text-emphasis {
+  z-index: -2;
+  height: 50px;
+  position: relative;
+  top: 45px;
+  right: 10px;
 }
 
 // Footer
@@ -73,5 +131,30 @@ $second-title-font: "PalmerLake", serif;
 
   .footer {
     padding: 3em;
+  }
+
+  .skills-div {
+    ul {
+      display: flex;
+    }
+
+    li {
+      text-align: center;
+      padding: 0 1em;
+      flex-direction: row;
+
+      h3 {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .about-div {
+    border: 1px solid #333;
+    padding: 5em;
+
+    span {
+      font-weight: bold;
+    }
   }
 }
