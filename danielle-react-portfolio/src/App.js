@@ -1,21 +1,24 @@
 import React, { Component } from 'react';
-import About from './components/aboutme';
-import Hero from './components/hero';
-import Footer from './components/footer';
-import TechSkills from './components/techskills';
-import Projects from './components/projects';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route
+} from "react-router-dom";
+
+import Home from './components/home';
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <Hero />
-                <About />
-                <TechSkills />
-                <Projects />
-                <Footer />
-            </div>
-
+            <Router>
+                <div>
+                    <Switch>
+                        <Route exact path="/">
+                            <Home />
+                        </Route>
+                    </Switch>
+                </div >
+            </Router>
         );
     }
 }

@@ -69,7 +69,6 @@ const TechSkills = () => {
                             <Col>
                                 <li>API Development</li>
                                 <li>RESTful APIs</li>
-
                             </Col>
                         </ul>
                     </Row>

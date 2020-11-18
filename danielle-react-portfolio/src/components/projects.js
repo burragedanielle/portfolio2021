@@ -17,7 +17,7 @@ const Projects = () => {
         <Router>
             <div>
                 <div className="projects-section">
-                    <h1>Projects</h1>
+                    <h1>my work</h1>
                     <Container>
                         <Row>
                             <Col><Link to="/project-one">Project 1</Link></Col>
@@ -39,8 +39,7 @@ const Projects = () => {
                 </Route>
             </Switch>
         </Router>
-    )
-
+    );
 }
 
 export default Projects;

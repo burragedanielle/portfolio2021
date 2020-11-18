@@ -5,22 +5,100 @@
 }
 
 // Variables
-$header-font: "Yeseva One", serif;
+$header-font: "Playfair Display", serif;
 $second-title-font: "PalmerLake", serif;
+
+$pink-brown: #c87469;
+$light-pink: #f2d0c3;
+$yellow: #dec054;
+$purple: #d3bada;
+$brown: #473b34;
+$white: #fdfef9;
 
 // Customizations
 
-// General
+body {
+  background-color: $white;
+}
 
+// General
 .section-title {
   margin-top: 2em;
+}
+
+.hero {
+  display: flex;
+}
+
+.jumbotron {
+  display: flex;
+}
+
+body {
+  color: $brown;
+}
+
+// Landing
+
+.test-container {
+  margin-top: auto;
+}
+
+#main-landing {
+  background-image: url("../images/mainlandingmobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: calc(125vh - 0px);
+}
+
+.hero-copy {
+  .hero-heading-main {
+    margin-top: 150px;
+  }
+  h3 {
+    font-family: $second-title-font;
+    font-size: 2em;
+    margin-bottom: 0;
+  }
+
+  .connect-links {
+    font-size: 1em;
+  }
+
+  button {
+    background-color: $yellow;
+    border: 1px solid $yellow;
+    padding: 0.75rem 1rem;
+  }
+
+  button:hover {
+    background-color: $pink-brown;
+    border: 1px solid $pink-brown;
+  }
+}
+
+.hero-heading-main {
+  font-family: $header-font;
+  font-size: 2.5em;
+}
+
+.hero-heading-sub {
+  font-family: $header-font;
+  font-size: 1.5em;
+  color: $pink-brown;
 }
 
 // About Me
 
 .about-div {
-  border: 1px solid #333;
   padding: 2em;
+  background-color: $light-pink;
+
+  h1 {
+    font-family: $second-title-font;
+    font-size: 3.5em;
+  }
 
   span {
     font-weight: bold;
@@ -66,6 +144,9 @@ $second-title-font: "PalmerLake", serif;
 
 .project-about,
 .project-details {
+  h1 {
+    font-family: $header-font;
+  }
   h2 {
     font-family: $second-title-font;
   }
@@ -112,17 +193,8 @@ $second-title-font: "PalmerLake", serif;
 //   background-color: $primary;
 // }
 
-.jumbotron {
-  height: calc(100vh);
-  border: 1px solid #333;
-}
-
 .head-title {
   font-family: $header-font;
-}
-
-.about-div {
-  background-color: #e4d2e4;
 }
 
 // Media Queries
