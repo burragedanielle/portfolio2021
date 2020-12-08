@@ -2,11 +2,14 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import TextEmphasis from '../images/portfolio-textemphasis.png';
+import allocat_screenshot from '../images/allocat_screenshot.png';
 
 const ProjectOnePage = () => {
     return (
-        <Container>
+        <Container className="project-container d-flex">
+            <img className="project-screenshot" src={allocat_screenshot} alt="Screenshot of Allocat Application"></img>
             <h1>Allocat</h1>
             <div className="project-about">
                 <Row>
@@ -20,7 +23,7 @@ const ProjectOnePage = () => {
                         </div>
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Col s={12} sm={12} md={8} lg={8} xl={8}>
                         <div>
                             <img src={TextEmphasis} className="text-emphasis"></img>
@@ -28,7 +31,7 @@ const ProjectOnePage = () => {
                             <p>Para</p>
                         </div>
                     </Col>
-                </Row>
+                </Row> */}
                 <Row>
                     <Col s={12} sm={12} md={8} lg={8} xl={8}>
                         <img src={TextEmphasis} className="text-emphasis"></img>
@@ -75,6 +78,10 @@ const ProjectOnePage = () => {
                     <h2>Fonts</h2>
                     <p>Para</p>
                 </div> */}
+            </div>
+            <div className="project-buttons">
+                <Button className="app-button">Live App</Button>
+                <Button className="code-button">Code</Button>
             </div>
         </Container>
     );

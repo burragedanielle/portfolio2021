@@ -15,25 +15,25 @@ const Hero = () => {
                             <h2 className="hero-heading-main">Hi! I'm Danielle Burrage - </h2>
                             <h2 className="hero-heading-sub">Web Developer & Designer </h2>
                             <Row>
-                                <Col xl={7} lg={7} md={7} xs={8} sm={8}>
-                                    <p>Front-End Web Developer combining a creative eye and technical skill set to develop stunning user interfaces.</p>
+                                <Col xl={7} lg={7} md={7} xs={11} sm={11}>
+                                    <p>I combine my creative eye and technical skill set to develop stunning user interfaces.</p>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col>
+                                <Col xs={6} sm={6} lg={4} xl={4}>
                                     <h3>Email:</h3>
                                     <p className="connect-links">burragedanielle@gmail.com</p>
                                 </Col>
-                                <Col>
+                                <Col xs={6} sm={6} lg={8} xl={8}>
                                     <h3>GitHub:</h3>
                                     <p className="connect-links">@burragedanielle</p>
                                 </Col>
                             </Row>
                             <Row>
-                                <Col>
+                                <Col xs={6} sm={6} lg={4} xl={4}>
                                     <Button>Download Resume</Button>
                                 </Col>
-                                <Col>
+                                <Col xs={6} sm={6} lg={8} xl={8}>
                                     <Button>Connect on LinkedIn!</Button>
                                 </Col>
                             </Row>

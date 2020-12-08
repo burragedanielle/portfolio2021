@@ -1,79 +1,68 @@
 import React from "react";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import { AiOutlineHtml5, AiOutlineSketch } from "react-icons/ai";
-import { FaSass, FaReact, FaNodeJs, FaBootstrap } from "react-icons/fa";
+import { FaSass, FaReact, FaNodeJs, FaBootstrap, FaPalette } from "react-icons/fa";
 import { DiMongodb, DiJavascript1, DiPhotoshop } from "react-icons/di";
-import { FiFigma } from "react-icons/fi";
 import { HiColorSwatch } from "react-icons/hi";
 import { VscTextSize } from "react-icons/vsc";
+import { BsDisplay } from "react-icons/bs";
+import { AiFillDatabase } from "react-icons/ai";
 
 const TechSkills = () => {
     return (
         <div>
             <div className="skills-div">
-                <Container>
-                    <Row className="skills-section section-title">
-                        <h1>My Skills</h1>
-                    </Row>
-                    <Row className="skills-section">
-                        <h2>Front-End</h2>
-                    </Row>
-                    <Row className="skills-section skills">
+                <h1>My Skills</h1>
+                <div className="skill-group">
+                    <BsDisplay className="skill-group-icon" />
+                    <h2 className="skill-title">Front-End</h2>
+                    <div className="skill-items">
                         <ul>
-                            <li><AiOutlineHtml5 /><h3>HTML</h3></li>
-                            <li><DiJavascript1 /><h3>JavaScript</h3></li>
-                            <li><FaSass /><h3>Sass</h3></li>
-                            <li><FaReact /><h3>React</h3></li>
-                            <li><FaBootstrap /><h3>Bootstrap</h3></li>
+                            <li><AiOutlineHtml5 className="skill-icon" /><p>HTML</p></li>
+                            <li><DiJavascript1 className="skill-icon" /><p>JavaScript</p></li>
+                            <li><FaSass className="skill-icon" /><p>Sass</p></li>
+                            <li><FaReact className="skill-icon" /><p>React</p></li>
+                            <li><FaBootstrap className="skill-icon" /><p>Bootstrap</p></li>
                         </ul>
-                    </Row>
-                    <Row className="skills-section">
-                        <h2>Back End</h2>
-                    </Row>
-                    <Row className="skills-section skills">
+                    </div>
+                </div>
+                <div className="skill-group">
+                    <AiFillDatabase className="skill-group-icon"></AiFillDatabase>
+                    <h2 className="skill-title">Back End</h2>
+                    <div className="skill-items">
                         <ul>
-                            <li><FaNodeJs /><h3>NodeJS</h3></li>
-                            <li><DiMongodb /><h3>MongoDB</h3></li>
+                            <li><FaNodeJs className="skill-icon" /><p>NodeJS</p></li>
+                            <li><DiMongodb className="skill-icon" /><p>MongoDB</p></li>
                         </ul>
-                    </Row>
-                    <Row className="skills-section">
-                        <h2>Design</h2>
-                    </Row>
-                    <Row className="skills-section skills">
+                    </div>
+                </div>
+                <div className="skill-group">
+                    <FaPalette className="skill-group-icon"></FaPalette>
+                    <h2 className="skill-title">Design</h2>
+                    <div className="skill-items">
                         <ul>
-                            <li><DiPhotoshop /><h3>Photoshop</h3></li>
-                            <li><AiOutlineSketch /><h3>Sketch</h3></li>
-                            <li><FiFigma /><h3>Figma</h3></li>
-                            <li><HiColorSwatch /><h3>Color Theory</h3></li>
-                            <li><VscTextSize /><h3>Typography</h3></li>
+                            <li><DiPhotoshop className="skill-icon" /><p>Photoshop</p></li>
+                            <li><AiOutlineSketch className="skill-icon" /><p>Sketch</p></li>
+                            <li><HiColorSwatch className="skill-icon" /><p>Color Theory</p></li>
+                            <li><VscTextSize className="skill-icon" /><p>Typography</p></li>
                         </ul>
-                    </Row>
-                    <Row className="skills-section">
-                        <h2>Other Skills</h2>
-                    </Row>
-                    <Row className="skills-section">
+                    </div>
+                </div>
+                {/* <div className="skill-group">
+                    <h2 className="skill-title">Other Skills</h2>
+                    <div>
                         <ul>
-                            <Col>
-                                <li>Visual Design</li>
-                                <li>Responsive Design</li>
-                                <li>SEO Optimization</li>
-                            </Col>
-                            <Col>
-                                <li>jQuery</li>
-                                <li>Express</li>
-                                <li>Mongoose</li>
-
-                            </Col>
-                            <Col>
-                                <li>API Development</li>
-                                <li>RESTful APIs</li>
-                            </Col>
+                            <li>Visual Design</li>
+                            <li>Responsive Design</li>
+                            <li>RESTful APIs</li>
+                            <li>Express</li>
+                            <li>SEO Optimization</li>
+                            <li>jQuery</li>
+                            <li>API Development</li>
+                            <li>Mongoose</li>
                         </ul>
-                    </Row>
-                </Container>
-            </div>
+                    </div>
+                </div> */}
+            </div >
         </div >
     );
 }

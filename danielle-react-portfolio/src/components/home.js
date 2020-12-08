@@ -4,7 +4,6 @@ import Hero from './hero';
 import Footer from './footer';
 import TechSkills from './techskills';
 import Navigation from './navigation';
-import Projects from './projects';
 
 class Home extends Component {
     render() {
@@ -14,7 +13,7 @@ class Home extends Component {
                 <Hero />
                 <About />
                 <TechSkills />
-                <Projects />
+                {/* <Projects /> */}
                 {/* <Footer /> */}
             </div >
         );
