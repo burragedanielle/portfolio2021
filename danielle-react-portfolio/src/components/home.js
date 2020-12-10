@@ -9,11 +9,9 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <Navigation />
                 <Hero />
                 <About />
                 <TechSkills />
-                {/* <Projects /> */}
                 {/* <Footer /> */}
             </div >
         );

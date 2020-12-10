@@ -21,11 +21,13 @@ $white: #fdfef9;
   button {
     background-color: $yellow;
     font-family: $body-font;
-    font-weight: bold;
+    font-weight: 700;
+    letter-spacing: 0.4em;
     color: $brown;
-    border: 2px solid $white;
+    border: 2px solid $seashell;
     padding: 0.75rem 1rem;
     text-transform: uppercase;
+    font-size: 11px;
   }
 
   button:hover {
@@ -56,6 +58,33 @@ body {
 
 body {
   color: $brown;
+}
+
+//Navigation
+.navbar {
+  background-color: $pink-brown;
+  color: $seashell;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.4em;
+  font-size: 11px;
+
+  a {
+    color: $seashell;
+    padding-right: 20px;
+  }
+
+  a:hover {
+    color: $light-pink;
+    text-decoration: none;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 20;
 }
 
 // Landing
@@ -290,7 +319,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: calc(125vh - 0px);
+    min-height: calc(100vh - 0px);
   }
 
   .footer {
