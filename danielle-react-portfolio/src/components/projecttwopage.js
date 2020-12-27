@@ -5,34 +5,36 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import TextEmphasis from '../images/portfolio-textemphasis.png';
 import schedulez_screenshot from '../images/schedulez_screenshot.png';
+import SectionSeparator from '../images/sectionseparator.png';
 
 const ProjectTwoPage = () => {
     return (
         <Container className="project-container d-flex">
             <img className="project-screenshot" src={schedulez_screenshot} alt="Screenshot of Schedulez Application"></img>
             <h1>Schedulez</h1>
+            <img className="section-separator" src={SectionSeparator}></img>
             <div className="project-about">
                 <Row>
                     <Col xs={12} sm={12} md={8} lg={8} xl={8}>
-                        <div>
-                            <img src={TextEmphasis} className="text-emphasis"></img>
-                            <h2>About</h2>
-                            <p>A full stack employee management application that allows
-                  managers and employees to build dynamic and functional
-                  schedules around their workday. Completed
+                        <p>A full stack employee management application that allows
+                              managers and employees to build dynamic and functional
+                              schedules around their workday. Completed
                       with three teammates.</p>
-                        </div>
                     </Col>
                 </Row>
-                {/* <Row>
-                    <Col s={12} sm={12} md={8} lg={8} xl={8}>
-                        <div>
-                            <img src={TextEmphasis} className="text-emphasis"></img>
-                            <h2>Features</h2>
-                            <p>Para</p>
-                        </div>
-                    </Col>
-                </Row> */}
+                <Row>
+                    <div className="project-buttons">
+                        <Button className="app-button">
+                            <a href='scheduleez.herokuapp.com/' target='_blank'>
+                            </a>Live App</Button>
+                        <Button className="code-button">
+                            <a href="https://github.com/md0808/schedulez" target='_blank'>Code</a>
+                        </Button>
+                    </div>
+                </Row>
+                <Row>
+                    <img className="section-separator" src={SectionSeparator}></img>
+                </Row>
                 <Row>
                     <Col s={12} sm={12} md={8} lg={8} xl={8}>
                         <img src={TextEmphasis} className="text-emphasis"></img>
@@ -50,36 +52,27 @@ const ProjectTwoPage = () => {
                         </Col>
                     </Row>
                 </div>
-            </div>
-            <div className="project-details">
-                <div>
-                    <img src={TextEmphasis} className="text-emphasis"></img>
-                    <h2>Tools</h2>
-                    <div>
-                        <p>
-                            <strong>Languages Used:</strong> HTML5, CSS, JavaScript
+                <Row>
+                    <Col s={12} sm={12} md={8} lg={8} xl={8}>
+                        <div>
+                            <img src={TextEmphasis} className="text-emphasis"></img>
+                            <h2>Tools</h2>
+                            <div>
+                                <p>
+                                    <strong>Languages Used:</strong> HTML5, CSS, JavaScript
                     </p>
-                        <p>
-                            <strong>Frameworks Used:</strong> jQuery, Materialize,
-                            Node.js, Express
+                                <p>
+                                    <strong>Frameworks Used:</strong> jQuery, Materialize,
+                                    Node.js, Express
                     </p>
-                        <p>
-                            <strong>Database:</strong> MySQL and Sequelize
+                                <p>
+                                    <strong>Database:</strong> MySQL and Sequelize
                     </p>
-                        {/* <div>
-                    <h2>Colors</h2>
-                    <p>Para</p>
-                </div>
-                <div>
-                    <h2>Fonts</h2>
-                    <p>Para</p>
-                </div> */}
-                    </div>
-                    <div className="project-buttons">
-                        <Button className="app-button">Live App</Button>
-                        <Button className="code-button">Code</Button>
-                    </div>
-                </div>
+
+                            </div>
+                        </div>
+                    </Col>
+                </Row>
             </div>
         </Container>
     );

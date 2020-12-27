@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, browserHistory } from 'react';
 import {
     BrowserRouter as Router,
     Switch,
@@ -7,13 +7,16 @@ import {
 } from "react-router-dom";
 
 import { Navbar, Nav } from 'react-bootstrap';
-import Home from './components/home';
+import Hero from './components/hero';
+import About from './components/aboutme';
+import TechSkills from './components/techskills';
 import Projects from './components/projects';
+import Contact from './components/contact';
 
 class App extends Component {
     render() {
         return (
-            <Router>
+            <Router history={browserHistory}>
                 <div>
                     <Navbar className='sticky'>
                         <Nav className="mr-auto">
@@ -28,10 +31,21 @@ class App extends Component {
                             </Nav.Link>
                         </Nav>
                     </Navbar>
-                    <Route exact path='/' component={Home} />
-                    <Route path='/projects' component={Projects} />
+                    <Switch>
+                        <Route exact path='/'>
+                            <Hero />
+                            <About />
+                            <TechSkills />
+                        </Route>
+                        <Route name='projects' path='/projects' >
+                            <Projects />
+                        </Route>
+                        <Route name='contact' path='/contact'>
+                            <Contact />
+                        </Route>
+                    </Switch>
                 </div >
-            </Router>
+            </Router >
         );
     }
 }

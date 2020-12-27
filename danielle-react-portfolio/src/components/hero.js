@@ -16,7 +16,7 @@ const Hero = () => {
                             <h2 className="hero-heading-sub">Web Developer & Designer </h2>
                             <Row>
                                 <Col xl={7} lg={7} md={7} xs={11} sm={11}>
-                                    <p>I combine my creative eye and technical skill set to develop stunning user interfaces.</p>
+                                    <p>I combine my creative eye and technical skill set to deliver stunning user interfaces.</p>
                                 </Col>
                             </Row>
                             <Row>
@@ -34,7 +34,9 @@ const Hero = () => {
                                     <Button>Download Resume</Button>
                                 </Col>
                                 <Col xs={6} sm={6} lg={8} xl={8}>
-                                    <Button>Connect on LinkedIn!</Button>
+                                    <Button>
+                                        <a href="https://www.linkedin.com/in/danielleburrage/" target="_blank">Connect on LinkedIn!</a>
+                                    </Button>
                                 </Col>
                             </Row>
                         </div>

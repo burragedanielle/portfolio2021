@@ -4,9 +4,14 @@
     url("../fonts/WOFF/PalmerLakePrint-Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Jaceline";
+  src: local("Jaceline"), url("../fonts/Jaceline.ttf") format("ttf");
+}
+
 // Variables
 $header-font: "Elsie", cursive;
-$second-title-font: "PalmerLake", serif;
+$second-title-font: "Jaceline", serif;
 $body-font: "Raleway", sans-serif;
 
 $seashell: #fff6f0;
@@ -23,8 +28,7 @@ $white: #fdfef9;
     font-family: $body-font;
     font-weight: 700;
     letter-spacing: 0.4em;
-    color: $brown;
-    border: 2px solid $seashell;
+    border: 2px solid $white;
     padding: 0.75rem 1rem;
     text-transform: uppercase;
     font-size: 11px;
@@ -33,7 +37,29 @@ $white: #fdfef9;
   button:hover {
     background-color: $pink-brown;
     border: 2px solid $white;
+    text-decoration: none;
   }
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  background-color: $pink-brown;
+  border: 2px solid $white;
+  outline: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: none;
+}
+
+.btn-primary:focus {
+  background-color: $pink-brown;
+  border: 2px solid $white;
+  outline: none;
+  box-shadow: none;
 }
 
 // Customizations
@@ -42,6 +68,7 @@ body {
   background-color: $seashell;
   color: $brown;
   font-family: $body-font;
+  @include button-style();
 }
 
 // General
@@ -54,6 +81,14 @@ body {
   margin: 0px;
   border-bottom: 5px solid $white;
   border-top: 5px solid $white;
+  a {
+    color: $brown;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: white;
+  }
 }
 
 body {
@@ -126,24 +161,36 @@ body {
 
 .hero-heading-main {
   font-family: $header-font;
-  font-size: 3.5em;
+  font-weight: 600;
+  font-size: 3.25em;
 }
 
 .hero-heading-sub {
   font-family: $header-font;
   font-size: 2.3em;
+  font-weight: 600;
   color: $pink-brown;
 }
 
 // About Me
 
+.underline {
+  text-decoration: underline;
+}
+
+.about-me-pics {
+  max-width: 100%;
+  align-content: center;
+}
+
 .about-div {
   padding: 2em;
-  background-color: $light-pink;
+  background-color: $seashell;
 
   h1 {
-    font-family: $second-title-font;
-    font-size: 3.5em;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: $header-font;
   }
 
   span {
@@ -155,7 +202,88 @@ body {
   }
 }
 
+#about-hey {
+  font-size: 5em;
+  padding: 0px;
+  margin: 0px;
+  font-family: $second-title-font;
+}
+
+.mid-section {
+  display: flex;
+  min-height: calc(100vh - 150px);
+  justify-content: center;
+  line-height: 1.8;
+  text-align: center;
+  align-content: center;
+
+  .row {
+    justify-content: center;
+  }
+
+  #about-line-one {
+    color: $light-pink;
+  }
+  #about-line-two {
+    color: $yellow;
+  }
+
+  #about-line-three {
+    color: $pink-brown;
+  }
+
+  .buttons-about {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+
+    .btn {
+      margin-left: 40px;
+      margin-right: 40px;
+    }
+  }
+
+  @include button-style();
+}
+
 //Skills Section
+
+.box-skills {
+  display: flex;
+  justify-content: center;
+  background-color: $seashell;
+  border: 5px solid $white;
+  height: 75%;
+  width: 100%;
+  transform: scale(1, 1) translate(0px, 0px);
+  position: relative;
+  h1 {
+    margin-top: 20px;
+  }
+}
+
+.circle {
+  background-color: $seashell;
+  border-radius: 50%;
+  border: 5px solid $white;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  position: absolute;
+  left: 140px;
+  top: 60px;
+}
+
+.circle_2 {
+  background-color: seashell;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  left: 125px;
+  top: 75px;
+}
 
 .skills-div {
   display: flex;
@@ -164,13 +292,15 @@ body {
 
   h1 {
     font-family: $header-font;
-    text-transform: lowercase;
+    font-weight: bold;
     align-self: center;
-    margin-bottom: 2em;
   }
 
   h2 {
-    font-family: $second-title-font;
+    font-family: $header-font;
+    font-weight: bold;
+    font-size: 1.35em;
+    margin-top: 15px;
   }
 
   ul {
@@ -179,52 +309,111 @@ body {
 
   li {
     font-size: 1em;
-    flex-grow: 1;
   }
 }
 
 .skill-group {
   display: flex;
   flex-flow: column wrap;
+  color: $body-font;
 
   .skill-group-icon {
     font-size: 4em;
     align-self: center;
-  }
-
-  ul {
-    display: flex;
-    justify-content: space-around;
-  }
-
-  li {
-    display: block;
-    flex: 0 1 auto; /* Default */
-    list-style-type: none;
-    padding: 0 1em;
-  }
-
-  .skill-icon {
-    font-size: 2em;
+    position: relative;
+    z-index: 4;
+    margin-top: 25px;
+    color: $pink-brown;
   }
 
   .skill-title {
     align-self: center;
   }
-}
 
-.skill .other-skills {
-  font-size: 1em;
+  ul {
+    margin-top: 10px;
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    flex-flow: column wrap;
+    align-content: center;
+    line-height: 2;
+    padding: 0px;
+  }
+
+  li {
+    list-style-type: none;
+    align-self: center;
+  }
 }
 
 //Projects
+
+.projects-section {
+  margin-top: 80px;
+
+  h1 {
+    font-family: $header-font;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.card {
+  border: 0px;
+  background-color: $white;
+  margin: 0 auto;
+
+  .card-img-top {
+    margin-bottom: 20px;
+  }
+
+  @include button-style();
+
+  .btn {
+    font-size: 14px;
+  }
+}
+
+.card-body {
+  display: flex;
+  flex-flow: column wrap;
+  height: 200px;
+
+  a {
+    display: flex;
+    color: $seashell;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.project-navigation {
+  margin-top: 45px;
+}
+
 .project-container {
   flex-flow: column wrap;
+  margin-top: 3em;
+  align-items: center;
 
   h1 {
     font-family: $header-font;
     align-self: center;
     margin-top: 1em;
+    font-size: 50px;
+    font-weight: 700;
+  }
+
+  .section-separator {
+    width: 300px;
+    align-content: center;
+    justify-content: center;
   }
 }
 
@@ -236,6 +425,17 @@ body {
 
 .project-about,
 .project-details {
+  display: flex;
+  flex-flow: column wrap;
+
+  .project-intro {
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
   h1 {
     font-family: $header-font;
   }
@@ -243,8 +443,11 @@ body {
     font-family: $second-title-font;
   }
 
+  .row {
+    justify-content: center;
+  }
+
   div {
-    margin: 0;
     padding: 0;
   }
 }
@@ -254,6 +457,17 @@ body {
   align-self: center;
 
   @include button-style();
+
+  a {
+    display: flex;
+    color: $seashell;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
 
   .app-button,
   .code-button {
@@ -267,6 +481,76 @@ body {
   position: relative;
   top: 45px;
   right: 10px;
+}
+
+//Contact
+
+.contact-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../images/background-contact-page.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.cursive {
+  font-family: $second-title-font;
+  font-weight: lighter;
+  font-size: 70px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+
+  a {
+    color: $brown;
+  }
+
+  a:hover {
+    color: $pink-brown;
+    text-decoration: none;
+  }
+
+  p {
+    letter-spacing: 0.2em;
+    margin-left: 30px;
+  }
+
+  svg {
+    font-size: 30px;
+  }
+}
+
+.contact-type {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: baseline;
+  margin: 20px 0;
+}
+
+.contact-section {
+  background-color: $seashell;
+  min-height: 75vh;
+  min-width: 75vh;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+  flex-flow: column wrap;
+  @include button-style();
+
+  h1 {
+    font-family: $header-font;
+    font-weight: 700;
+  }
+
+  .contact-button {
+    margin-bottom: 25px;
+    margin-top: auto;
+  }
 }
 
 // Footer
@@ -348,8 +632,8 @@ body {
   }
 
   .about-div {
-    border: 1px solid #333;
     padding: 5em;
+    font-size: 1.15em;
 
     span {
       font-weight: bold;
