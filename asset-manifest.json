@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.6315b1a8.chunk.css",
-    "main.js": "/static/js/main.8721df8f.chunk.js",
-    "main.js.map": "/static/js/main.8721df8f.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.aeb3bcad.js",
-    "runtime-main.js.map": "/static/js/runtime-main.aeb3bcad.js.map",
-    "static/js/2.1b29b5f8.chunk.js": "/static/js/2.1b29b5f8.chunk.js",
-    "static/js/2.1b29b5f8.chunk.js.map": "/static/js/2.1b29b5f8.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.b5c8070a487e386b2a4820b2e54a7e4e.js": "/precache-manifest.b5c8070a487e386b2a4820b2e54a7e4e.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.6315b1a8.chunk.css.map": "/static/css/main.6315b1a8.chunk.css.map",
-    "static/js/2.1b29b5f8.chunk.js.LICENSE.txt": "/static/js/2.1b29b5f8.chunk.js.LICENSE.txt",
-    "static/media/app.scss": "/static/media/mainlandingmobile.c0bfbf6d.png",
-    "static/media/allocat_screenshot.png": "/static/media/allocat_screenshot.248af44e.png",
-    "static/media/portfolio-about-me-pictures.png": "/static/media/portfolio-about-me-pictures.b2f1cc70.png",
-    "static/media/portfolio-textemphasis.png": "/static/media/portfolio-textemphasis.4c529b17.png",
-    "static/media/schedulez_screenshot.png": "/static/media/schedulez_screenshot.c6778acb.png"
+    "main.css": "/portfolio2021/static/css/main.cbac44b9.chunk.css",
+    "main.js": "/portfolio2021/static/js/main.8721df8f.chunk.js",
+    "main.js.map": "/portfolio2021/static/js/main.8721df8f.chunk.js.map",
+    "runtime-main.js": "/portfolio2021/static/js/runtime-main.4fea8290.js",
+    "runtime-main.js.map": "/portfolio2021/static/js/runtime-main.4fea8290.js.map",
+    "static/js/2.1b29b5f8.chunk.js": "/portfolio2021/static/js/2.1b29b5f8.chunk.js",
+    "static/js/2.1b29b5f8.chunk.js.map": "/portfolio2021/static/js/2.1b29b5f8.chunk.js.map",
+    "index.html": "/portfolio2021/index.html",
+    "precache-manifest.416b3994864bb311e79d3bb809759972.js": "/portfolio2021/precache-manifest.416b3994864bb311e79d3bb809759972.js",
+    "service-worker.js": "/portfolio2021/service-worker.js",
+    "static/css/main.cbac44b9.chunk.css.map": "/portfolio2021/static/css/main.cbac44b9.chunk.css.map",
+    "static/js/2.1b29b5f8.chunk.js.LICENSE.txt": "/portfolio2021/static/js/2.1b29b5f8.chunk.js.LICENSE.txt",
+    "static/media/app.scss": "/portfolio2021/static/media/mainlandingmobile.c0bfbf6d.png",
+    "static/media/allocat_screenshot.png": "/portfolio2021/static/media/allocat_screenshot.248af44e.png",
+    "static/media/portfolio-about-me-pictures.png": "/portfolio2021/static/media/portfolio-about-me-pictures.b2f1cc70.png",
+    "static/media/portfolio-textemphasis.png": "/portfolio2021/static/media/portfolio-textemphasis.4c529b17.png",
+    "static/media/schedulez_screenshot.png": "/portfolio2021/static/media/schedulez_screenshot.c6778acb.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.aeb3bcad.js",
+    "static/js/runtime-main.4fea8290.js",
     "static/js/2.1b29b5f8.chunk.js",
-    "static/css/main.6315b1a8.chunk.css",
+    "static/css/main.cbac44b9.chunk.css",
     "static/js/main.8721df8f.chunk.js"
   ]
 }
