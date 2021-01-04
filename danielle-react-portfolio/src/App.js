@@ -16,31 +16,31 @@ import Contact from './components/contact';
 class App extends Component {
     render() {
         return (
-            <Router history={browserHistory}>
+            <Router history={hashHistory}>
                 <div>
                     <Navbar className='sticky'>
                         <Nav className="mr-auto">
                             <Nav.Link>
-                                <Link to="/portfolio2021/">Home</Link>
+                                <Link to="/">Home</Link>
                             </Nav.Link>
                             <Nav.Link>
-                                <Link to="/portfolio2021/projects">Projects</Link>
+                                <Link to="/projects">Projects</Link>
                             </Nav.Link>
                             <Nav.Link>
-                                <Link to="/portfolio2021/contact">Contact</Link>
+                                <Link to="/contact">Contact</Link>
                             </Nav.Link>
                         </Nav>
                     </Navbar>
                     <Switch>
-                        <Route exact path='/portfolio2021/'>
+                        <Route exact path='/'>
                             <Hero />
                             <About />
                             <TechSkills />
                         </Route>
-                        <Route name='projects' path='/portfolio2021/projects' >
+                        <Route name='/projects' path='/projects' >
                             <Projects />
                         </Route>
-                        <Route name='contact' path='/portfolio2021/contact'>
+                        <Route name='/contact' path='/contact'>
                             <Contact />
                         </Route>
                     </Switch>
