@@ -1,6 +1,6 @@
 {
   "name": "danielle-react-portfolio",
-  "home": "https://burragedanielle.github.io/",
+  "homepage": "https://burragedanielle.github.io/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
