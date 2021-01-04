@@ -1,4 +1,4 @@
-import React, { Component, browserHistory } from 'react';
+import React, { Component, hashHistory } from 'react';
 import {
     HashRouter as Router,
     Switch,
