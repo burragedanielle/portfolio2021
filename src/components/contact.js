@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { MdEmail } from 'react-icons/md';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import Resume from '../images/burrage_danielle-resume2021.pdf';
 
 const Contact = () => {
     return (
@@ -30,7 +31,9 @@ const Contact = () => {
                         </div>
                     </div>
                     <div className="contact-button">
-                        <Button>Download My Resume</Button>
+                        <Button>
+                            <a href={Resume}>Download Resume</a>
+                        </Button>
                     </div>
                 </div>
             </div>

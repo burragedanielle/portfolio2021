@@ -7,11 +7,11 @@ import {
     HashRouter as Router,
     Switch,
     Route,
-    Link,
     withRouter
 } from "react-router-dom";
 import Projects from "./projects";
 import AboutMePics from '../images/portfolio-about-me-pictures.png';
+import Resume from '../images/burrage_danielle-resume2021.pdf';
 
 const About = ({ history }) => {
     function goTo(location) {
@@ -53,12 +53,11 @@ const About = ({ history }) => {
                                 <Row> <h1><span id="about-line-two">I know what it takes to turn</span></h1></Row>
                                 <Row> <h1><span id="about-line-three">your ideas into functional code. </span></h1></Row>
                                 <Row className="buttons-about">
-
                                     <Button onClick={() => goTo('projects')}>
                                         See My Work
                                 </Button>
                                     <Button>
-                                        Download My Resume
+                                        <a href={Resume}>Download Resume</a>
                                     </Button>
                                 </Row>
                             </div>

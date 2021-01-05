@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
+import Resume from '../images/burrage_danielle-resume2021.pdf';
 
 const Hero = () => {
     return (
@@ -31,7 +32,9 @@ const Hero = () => {
                             </Row>
                             <Row>
                                 <Col xs={6} sm={6} lg={4} xl={4}>
-                                    <Button>Download Resume</Button>
+                                    <Button>
+                                        <a href={Resume}>Download Resume</a>
+                                    </Button>
                                 </Col>
                                 <Col xs={6} sm={6} lg={8} xl={8}>
                                     <Button>

@@ -2,11 +2,7 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
-import { AiOutlineHtml5, AiOutlineSketch } from "react-icons/ai";
-import { FaSass, FaReact, FaNodeJs, FaBootstrap, FaPalette } from "react-icons/fa";
-import { DiMongodb, DiJavascript1, DiPhotoshop } from "react-icons/di";
-import { HiColorSwatch } from "react-icons/hi";
-import { VscTextSize } from "react-icons/vsc";
+import { FaPalette } from "react-icons/fa";
 import { BsDisplay } from "react-icons/bs";
 import { AiFillDatabase } from "react-icons/ai";
 

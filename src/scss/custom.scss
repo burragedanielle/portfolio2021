@@ -16,7 +16,7 @@ $body-font: "Raleway", sans-serif;
 
 $seashell: #fff6f0;
 $pink-brown: #c87469;
-$light-pink: #f2d0c3;
+$light-pink: #ebaea6;
 $yellow: #dec054;
 $purple: #d3bada;
 $brown: #473b34;
@@ -236,6 +236,16 @@ body {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $brown;
+      text-decoration: none;
+    }
 
     .btn {
       margin-left: 40px;
@@ -550,6 +560,16 @@ body {
   .contact-button {
     margin-bottom: 25px;
     margin-top: auto;
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $brown;
+      text-decoration: none;
+    }
   }
 }
 
