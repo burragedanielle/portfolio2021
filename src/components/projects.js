@@ -17,6 +17,7 @@ import ProjectTwoPage from './projecttwopage';
 import ProjectThreePage from './projectthreepage';
 import allocat_screenshot from '../images/allocat_screenshot.png';
 import schedulez_screenshot from '../images/schedulez_screenshot.png';
+import petshop_screenshots from '../images/petshop_screenshots.png';
 
 const Projects = () => {
 
@@ -38,13 +39,16 @@ const Projects = () => {
                                     <Card>
                                         <Card.Img variant="top" src={allocat_screenshot} />
                                         <Card.Body>
+                                            <Card.Subtitle className="mb-2 text-muted">
+                                                React, MERN Stack
+                                            </Card.Subtitle>
                                             <Card.Text>
                                                 A full stack MERN application that simplifies complex projects through task allocation.
                                             </Card.Text>
                                             <Link to="/projects/project-one">
                                                 <Button className="button-test">
 
-                                                    View Allocat
+                                                    Learn More
 
                                             </Button>
                                             </Link>
@@ -55,31 +59,47 @@ const Projects = () => {
                                     <Card>
                                         <Card.Img variant="top" src={schedulez_screenshot} />
                                         <Card.Body>
+                                            <Card.Subtitle className="mb-2 text-muted">
+                                                Web Design, RESTful API
+                                            </Card.Subtitle>
                                             <Card.Text>
-                                                A full stack employee management application that allows
-                      managers and employees to build dynamic and functional
-                      schedules around their workday.
+                                                A full stack employee management application that allows managers and employees to build dynamic and functional schedules around their workday.
                                             </Card.Text>
                                             <Link to="/projects/project-two">
                                                 <Button className="button-test">
-                                                    View Schedulez
+                                                    Learn More
                                             </Button>
                                             </Link>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                             </Row>
-                            {/* <Row>
+                            <Row className="project-navigation">
                                 <Col>
-                                    <Link to="project-three">View RESTful API Pet Shop</Link>
+                                    <Card>
+                                        <Card.Img variant="top" src={petshop_screenshots} />
+                                        <Card.Body>
+                                            <Card.Subtitle className="mb-2 text-muted">
+                                                Node, Web Design, RESTful API
+                                            </Card.Subtitle>
+                                            <Card.Text>
+                                                A concept e-commerce application with a pet shop theme. App retrieves products from Mongo database and renders to front end with ability to sort by product category.
+                                            </Card.Text>
+                                            <Link to="/projects/project-three">
+                                                <Button className="button-test">
+                                                    Learn More
+                                            </Button>
+                                            </Link>
+                                        </Card.Body>
+                                    </Card>
                                 </Col>
-                            </Row> */}
+                            </Row>
                         </Container>
                     </div>
                 </Route>
                 <Route name='project-one' exact path='/projects/project-one' component={ProjectOnePage} />
                 <Route name='project-two' path='/projects/project-two' component={ProjectTwoPage} />
-                <Route name='project-three' path='/project-three' component={ProjectThreePage} />
+                <Route name='project-three' path='/projects/project-three' component={ProjectThreePage} />
             </Switch>
         </Router >
     );

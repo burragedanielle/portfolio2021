@@ -1,30 +1,25 @@
 @font-face {
-  font-family: "PalmerLake";
-  src: local("PalmerLake"),
-    url("../fonts/WOFF/PalmerLakePrint-Regular.woff") format("woff");
-}
-
-@font-face {
   font-family: "Jaceline";
   src: local("Jaceline"), url("../fonts/Jaceline.ttf") format("ttf");
 }
 
 // Variables
-$header-font: "Elsie", cursive;
+$header-font: "Bodoni Moda", serif;
 $second-title-font: "Jaceline", serif;
-$body-font: "Raleway", sans-serif;
+$body-font: "Montserrat", sans-serif;
 
-$seashell: #fff6f0;
-$pink-brown: #c87469;
-$light-pink: #ebaea6;
-$yellow: #dec054;
+$seashell: #f4f0ed;
+$pink-brown: #bb9278;
+$lighter-brown: #c38682;
+$light-pink: #e8d3cc;
+$splash-pink: #d1728a;
 $purple: #d3bada;
-$brown: #473b34;
+$brown: #333;
 $white: #fdfef9;
 
 @mixin button-style {
   button {
-    background-color: $yellow;
+    background-color: $pink-brown;
     font-family: $body-font;
     font-weight: 700;
     letter-spacing: 0.4em;
@@ -32,12 +27,14 @@ $white: #fdfef9;
     padding: 0.75rem 1rem;
     text-transform: uppercase;
     font-size: 11px;
+    color: $white;
   }
 
   button:hover {
-    background-color: $pink-brown;
+    background-color: $lighter-brown;
     border: 2px solid $white;
     text-decoration: none;
+    color: $white;
   }
 }
 
@@ -79,15 +76,14 @@ body {
 .jumbotron {
   display: flex;
   margin: 0px;
-  border-bottom: 5px solid $white;
-  border-top: 5px solid $white;
+
   a {
-    color: $brown;
+    color: $white;
   }
 
   a:hover {
     text-decoration: none;
-    color: white;
+    color: $white;
   }
 }
 
@@ -129,27 +125,42 @@ body {
 }
 
 #main-landing {
-  background-image: url("../images/mainlandingmobile.png");
+  // background-image: url("../images/mainlandingmobile.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: calc(125vh - 0px);
+  background-color: $seashell;
 }
 
 .hero-copy {
   line-height: 1.8;
+  text-align: center;
 
   .hero-heading-main {
     margin-top: 100px;
+    text-transform: uppercase;
+    letter-spacing: 1.25rem;
   }
   h3 {
     font-family: $second-title-font;
-    font-size: 2em;
+    font-size: 9rem;
+    display: inline-block;
+    position: relative;
+    bottom: 4rem;
+
     margin-bottom: 0;
+    color: $splash-pink;
+    transform: rotate(-2.5deg);
+    letter-spacing: 0.3rem;
   }
 
   p {
-    font-size: 22px;
+    font-size: 13px;
+    margin-top: -6em;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
   }
 
   .connect-links {
@@ -161,15 +172,7 @@ body {
 
 .hero-heading-main {
   font-family: $header-font;
-  font-weight: 600;
-  font-size: 3.25em;
-}
-
-.hero-heading-sub {
-  font-family: $header-font;
-  font-size: 2.3em;
-  font-weight: 600;
-  color: $pink-brown;
+  font-size: 4.2rem;
 }
 
 // About Me
@@ -183,14 +186,41 @@ body {
   align-content: center;
 }
 
-.about-div {
-  padding: 2em;
-  background-color: $seashell;
+#hello-intro {
+  font-family: $header-font;
+  text-transform: uppercase;
+  color: $pink-brown;
+  letter-spacing: 0.5rem;
+}
 
-  h1 {
-    font-size: 2em;
-    font-weight: 700;
-    font-family: $header-font;
+hr {
+  width: 100px;
+  height: 2px;
+  border-top: solid 2px $pink-brown;
+  padding-bottom: 2rem;
+}
+
+.hello-intro {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.about-div {
+  padding: 4em;
+  height: calc(50vh);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 0.95em;
+
+  h3 {
+    font-weight: 400;
+    font-family: $body-font;
   }
 
   span {
@@ -199,19 +229,41 @@ body {
 
   li {
     margin: 1em 0;
+    font-size: 0.95em;
+    font-family: $body-font;
+  }
+}
+
+.about-div-one {
+  p {
+    font-family: $body-font;
+    padding: 0 6rem;
+  }
+}
+
+#what-div {
+  font-family: $body-font;
+  flex-flow: row wrap;
+  align-content: center;
+
+  li {
+    padding-bottom: 2rem;
+    list-style: none;
   }
 }
 
 #about-hey {
-  font-size: 5em;
+  font-size: 5.5em;
   padding: 0px;
   margin: 0px;
   font-family: $second-title-font;
+  color: $splash-pink;
 }
 
 .mid-section {
   display: flex;
-  min-height: calc(100vh - 150px);
+  font-family: $header-font;
+  min-height: calc(100vh);
   justify-content: center;
   line-height: 1.8;
   text-align: center;
@@ -222,18 +274,24 @@ body {
   }
 
   #about-line-one {
-    color: $light-pink;
+    color: $pink-brown;
+    font-size: 1em;
   }
   #about-line-two {
-    color: $yellow;
+    color: #daa49d;
+    font-size: 1em;
   }
 
   #about-line-three {
-    color: $pink-brown;
+    color: $splash-pink;
+    font-size: 3.25em;
+    font-family: $second-title-font;
+    font-weight: 200;
+    position: relative;
+    bottom: 50px;
   }
 
   .buttons-about {
-    margin-top: 50px;
     display: flex;
     justify-content: space-around;
 
@@ -243,7 +301,6 @@ body {
     }
 
     a:hover {
-      color: $brown;
       text-decoration: none;
     }
 
@@ -261,9 +318,11 @@ body {
 .box-skills {
   display: flex;
   justify-content: center;
-  background-color: $seashell;
+  background-image: url("../images/background-contact-page.png");
+  background-position: center;
+  background-size: cover;
   border: 5px solid $white;
-  height: 75%;
+  height: 85%;
   width: 100%;
   transform: scale(1, 1) translate(0px, 0px);
   position: relative;
@@ -275,7 +334,7 @@ body {
 .circle {
   background-color: $seashell;
   border-radius: 50%;
-  border: 5px solid $white;
+  border: 0px solid $white;
   width: 100px;
   height: 100px;
   overflow: hidden;
@@ -285,7 +344,6 @@ body {
 }
 
 .circle_2 {
-  background-color: seashell;
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -299,18 +357,19 @@ body {
   display: flex;
   flex-flow: column wrap;
   width: 100%;
+  z-index: 4;
 
   h1 {
-    font-family: $header-font;
-    font-weight: bold;
+    font-family: $second-title-font;
     align-self: center;
   }
 
   h2 {
     font-family: $header-font;
-    font-weight: bold;
+    letter-spacing: 0.2em;
     font-size: 1.35em;
     margin-top: 15px;
+    text-transform: uppercase;
   }
 
   ul {
@@ -326,6 +385,9 @@ body {
   display: flex;
   flex-flow: column wrap;
   color: $body-font;
+  background-color: $seashell;
+  padding: 1rem;
+  margin: 1rem 0;
 
   .skill-group-icon {
     font-size: 4em;
@@ -343,7 +405,7 @@ body {
   ul {
     margin-top: 10px;
     display: flex;
-    font-family: "Raleway", sans-serif;
+    font-family: $body-font;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     flex-flow: column wrap;
@@ -359,6 +421,18 @@ body {
 }
 
 //Projects
+
+.card-subtitle {
+  text-transform: uppercase;
+  font-family: $body-font;
+  letter-spacing: 0.4em;
+  font-size: 11px;
+  margin-bottom: 2em;
+}
+
+.card-img-top {
+  margin-bottom: 0px;
+}
 
 .projects-section {
   margin-top: 80px;
@@ -386,10 +460,14 @@ body {
   }
 }
 
+.card {
+  padding: 1.5em;
+}
+
 .card-body {
   display: flex;
   flex-flow: column wrap;
-  height: 200px;
+  height: 250px;
 
   a {
     display: flex;
@@ -400,6 +478,10 @@ body {
 
   a:hover {
     text-decoration: none;
+  }
+
+  p {
+    margin-top: 1em;
   }
 }
 
@@ -509,6 +591,8 @@ body {
   font-family: $second-title-font;
   font-weight: lighter;
   font-size: 70px;
+  text-transform: lowercase;
+  color: $splash-pink;
 }
 
 .contact-content {
@@ -521,7 +605,7 @@ body {
   }
 
   a:hover {
-    color: $pink-brown;
+    color: $lighter-brown;
     text-decoration: none;
   }
 
@@ -548,13 +632,13 @@ body {
   min-width: 75vh;
   align-content: center;
   text-align: center;
-  padding: 20px;
+  padding: 3em;
   flex-flow: column wrap;
   @include button-style();
 
   h1 {
     font-family: $header-font;
-    font-weight: 700;
+    text-transform: uppercase;
   }
 
   .contact-button {
@@ -567,7 +651,7 @@ body {
     }
 
     a:hover {
-      color: $brown;
+      color: $white;
       text-decoration: none;
     }
   }
@@ -575,9 +659,20 @@ body {
 
 // Footer
 
-.footer-color {
-  background-color: #e4d2e4;
-  padding: 1em;
+.footer {
+  background-image: url("../images/background-contact-page.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+}
+
+.footer-container {
+  background-color: $seashell;
+  padding: 2em;
+
+  img {
+    max-width: 400px;
+  }
 }
 
 .connect-title {
@@ -619,7 +714,7 @@ body {
   }
 
   #main-landing {
-    background-image: url("../images/mainlanding.png");
+    // background-image: url("../images/mainlanding.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -652,9 +747,6 @@ body {
   }
 
   .about-div {
-    padding: 5em;
-    font-size: 1.15em;
-
     span {
       font-weight: bold;
     }

@@ -8,9 +8,8 @@ const Contact = () => {
     return (
         <div>
             <div className="contact-background">
-
                 <div className="contact-section d-flex">
-                    <h1>Connect <span className="cursive">with</span> Danielle!</h1>
+                    <h1>Connect <span className="cursive">with</span> Danielle</h1>
 
                     <div className="contact-content">
                         <div className="contact-type">

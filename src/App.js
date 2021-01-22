@@ -12,6 +12,7 @@ import About from './components/aboutme';
 import TechSkills from './components/techskills';
 import Projects from './components/projects';
 import Contact from './components/contact';
+import Footer from './components/footer';
 
 class App extends Component {
     render() {
@@ -35,7 +36,7 @@ class App extends Component {
                         <Route exact path='/'>
                             <Hero />
                             <About />
-                            <TechSkills />
+                            <Footer />
                         </Route>
                         <Route name='/projects' path='/projects' >
                             <Projects />

@@ -11,7 +11,6 @@ const TechSkills = () => {
         <div>
             <Container>
                 <div className="skills-div">
-                    <h1>My Skills</h1>
                     <div className="skill-group">
                         <Row>
                             <Col md={4} lg={4} xl={4}>
