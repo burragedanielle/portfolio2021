@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -18,8 +18,14 @@ import ProjectThreePage from './projectthreepage';
 import allocat_screenshot from '../images/allocat_screenshot.png';
 import schedulez_screenshot from '../images/schedulez_screenshot.png';
 import petshop_screenshots from '../images/petshop_screenshots.png';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Projects = () => {
+    useEffect(() => {
+        Aos.init({ duration: 2000 });
+
+    }, []);
 
     return (
         <Router>
@@ -34,7 +40,7 @@ const Projects = () => {
                             <Row>
                                 <h1>My Projects</h1>
                             </Row>
-                            <Row className="project-navigation">
+                            <Row className="project-navigation" data-aos="fade-up">
                                 <Col>
                                     <Card>
                                         <Card.Img variant="top" src={allocat_screenshot} />
@@ -74,7 +80,7 @@ const Projects = () => {
                                     </Card>
                                 </Col>
                             </Row>
-                            <Row className="project-navigation">
+                            <Row className="project-navigation" data-aos="fade-up">
                                 <Col>
                                     <Card>
                                         <Card.Img variant="top" src={petshop_screenshots} />

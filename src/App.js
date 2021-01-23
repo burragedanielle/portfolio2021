@@ -34,9 +34,11 @@ class App extends Component {
                     </Navbar>
                     <Switch>
                         <Route exact path='/'>
+
                             <Hero />
                             <About />
                             <Footer />
+
                         </Route>
                         <Route name='/projects' path='/projects' >
                             <Projects />

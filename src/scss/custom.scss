@@ -7,6 +7,7 @@
 $header-font: "Bodoni Moda", serif;
 $second-title-font: "Jaceline", serif;
 $body-font: "Montserrat", sans-serif;
+$serif-two: "Abhaya Libre", serif;
 
 $seashell: #f4f0ed;
 $pink-brown: #bb9278;
@@ -186,11 +187,12 @@ body {
   align-content: center;
 }
 
-#hello-intro {
+.section-intro {
   font-family: $header-font;
   text-transform: uppercase;
-  color: $pink-brown;
-  letter-spacing: 0.5rem;
+  // color: $pink-brown;
+  font-size: 2.25rem;
+  letter-spacing: 0.4em;
 }
 
 hr {
@@ -215,12 +217,11 @@ hr {
   justify-content: center;
   align-content: center;
   text-align: center;
+  font-size: 1.25rem;
   line-height: 2rem;
-  font-size: 0.95em;
 
   h3 {
     font-weight: 400;
-    font-family: $body-font;
   }
 
   span {
@@ -236,7 +237,7 @@ hr {
 
 .about-div-one {
   p {
-    font-family: $body-font;
+    font-family: $serif-two;
     padding: 0 6rem;
   }
 }
@@ -252,12 +253,17 @@ hr {
   }
 }
 
-#about-hey {
-  font-size: 5.5em;
+.about-div-two {
+  li {
+    font-family: $serif-two;
+  }
+}
+
+.about-hey {
   padding: 0px;
-  margin: 0px;
   font-family: $second-title-font;
   color: $splash-pink;
+  font-size: 4rem;
 }
 
 .mid-section {
@@ -318,9 +324,7 @@ hr {
 .box-skills {
   display: flex;
   justify-content: center;
-  background-image: url("../images/background-contact-page.png");
-  background-position: center;
-  background-size: cover;
+  background-color: $seashell;
   border: 5px solid $white;
   height: 85%;
   width: 100%;
@@ -332,7 +336,7 @@ hr {
 }
 
 .circle {
-  background-color: $seashell;
+  // background-color: $seashell;
   border-radius: 50%;
   border: 0px solid $white;
   width: 100px;
@@ -353,6 +357,11 @@ hr {
   top: 75px;
 }
 
+.test-container-about {
+  background-color: $light-pink;
+  padding: 3.5rem;
+}
+
 .skills-div {
   display: flex;
   flex-flow: column wrap;
@@ -364,7 +373,7 @@ hr {
     align-self: center;
   }
 
-  h2 {
+  h4 {
     font-family: $header-font;
     letter-spacing: 0.2em;
     font-size: 1.35em;
@@ -385,7 +394,7 @@ hr {
   display: flex;
   flex-flow: column wrap;
   color: $body-font;
-  background-color: $seashell;
+  // background-color: $seashell;
   padding: 1rem;
   margin: 1rem 0;
 
@@ -439,6 +448,8 @@ hr {
 
   h1 {
     font-family: $header-font;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
     width: 100%;
     text-align: center;
   }
@@ -491,15 +502,25 @@ hr {
 
 .project-container {
   flex-flow: column wrap;
-  margin-top: 3em;
+  margin: 3em 3em;
   align-items: center;
 
   h1 {
     font-family: $header-font;
     align-self: center;
     margin-top: 1em;
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 2.25rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.4em;
+    font-size: 11px;
+    color: #6c757d;
+    padding: 2rem 0;
   }
 
   .section-separator {
@@ -520,19 +541,13 @@ hr {
   display: flex;
   flex-flow: column wrap;
 
-  .project-intro {
-    text-align: center;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
   h1 {
     font-family: $header-font;
   }
   h2 {
-    font-family: $second-title-font;
+    font-family: $header-font;
+    text-transform: uppercase;
+    font-size: 1rem;
   }
 
   .row {
@@ -664,6 +679,7 @@ hr {
   background-position: center;
   background-size: cover;
   width: 100%;
+  font-family: $serif-two;
 }
 
 .footer-container {
