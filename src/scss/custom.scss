@@ -126,12 +126,22 @@ body {
 }
 
 #main-landing {
-  // background-image: url("../images/mainlandingmobile.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: calc(125vh - 0px);
   background-color: $seashell;
+}
+
+#main-landing::before {
+  content: "";
+  background-image: url("../images/background-hero.jpg");
+  background-position: 0px -40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
 }
 
 .hero-copy {
@@ -176,6 +186,16 @@ body {
   font-size: 4.2rem;
 }
 
+.more-icon {
+  font-size: 14px;
+  color: $pink-brown;
+  font-family: $body-font;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  top: 130px;
+}
+
 // About Me
 
 .underline {
@@ -199,7 +219,7 @@ hr {
   width: 100px;
   height: 2px;
   border-top: solid 2px $pink-brown;
-  padding-bottom: 2rem;
+  padding: 0 2rem;
 }
 
 .hello-intro {

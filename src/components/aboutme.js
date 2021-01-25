@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import {
     HashRouter as Router,
@@ -10,8 +9,7 @@ import {
     withRouter
 } from "react-router-dom";
 import Projects from "./projects";
-import AboutMePics from '../images/portfolio-about-me-pictures.png';
-import Resume from '../images/burrage_danielle-resume2021.pdf';
+import Resume from '../images/burragedanielleresume.pdf';
 import TechSkills from '../components/techskills';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -38,7 +36,8 @@ const About = ({ history }) => {
                                     <h3 className="section-intro">I'm Danielle</h3>
                                     <hr></hr>
                                     <p>I am a web developer and designer with award winning experience in digital marketing. Not only do I have the ability to come up with great ideas — I have the technical skills to execute them.</p>
-                                    <p>I enjoy typography, animal print and poodles.</p>
+                                    <p>I earned a certificate in Full Stack Web Development from the University of Kansas where I gained intensive, practical experience building full-stack web applications individually and in teams.</p>
+                                    <p>Beyond code, I enjoy typography, animal print and poodles.</p>
                                 </Row>
                             </Container>
                         </div>

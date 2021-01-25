@@ -1,10 +1,7 @@
 import React, { useEffect } from "react";
 import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-import Resume from '../images/burrage_danielle-resume2021.pdf';
+import { GoTriangleDown } from 'react-icons/go';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -23,6 +20,11 @@ const Hero = () => {
                             <h3 className="hero-heading-sub">Web Design</h3>
 
                             <p>Combining my creative eye and technical skill set to deliver stunning user interfaces.</p>
+                        </div>
+
+                        <div className="more-icon">
+                            <p>See More</p>
+                            <GoTriangleDown />
                         </div>
                     </Container>
                 </Jumbotron>

@@ -2,10 +2,8 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import TextEmphasis from '../images/portfolio-textemphasis.png';
 import Button from 'react-bootstrap/Button';
 import restapi_screenshot from '../images/petshop_screenshots.png';
-import SectionSeparator from '../images/sectionseparator.png';
 
 const ProjectThreePage = () => {
     return (

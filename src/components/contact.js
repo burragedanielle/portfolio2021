@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { MdEmail } from 'react-icons/md';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import Resume from '../images/burrage_danielle-resume2021.pdf';
+import Resume from '../images/burragedanielleresume.pdf';
 
 const Contact = () => {
     return (

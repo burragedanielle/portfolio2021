@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
-import Resume from "../images/burrage_danielle-resume2021.pdf";
+import Resume from '../images/burragedanielleresume.pdf';
 import PhotoMe from "../images/IMG_2757.jpg";
 import { MdEmail } from "react-icons/md";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
