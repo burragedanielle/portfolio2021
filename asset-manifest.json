@@ -1,33 +1,32 @@
 {
   "files": {
-    "main.css": "/static/css/main.2f141e42.chunk.css",
-    "main.js": "/static/js/main.3c729b81.chunk.js",
-    "main.js.map": "/static/js/main.3c729b81.chunk.js.map",
+    "main.css": "/static/css/main.a664862d.chunk.css",
+    "main.js": "/static/js/main.e306107c.chunk.js",
+    "main.js.map": "/static/js/main.e306107c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.aeb3bcad.js",
     "runtime-main.js.map": "/static/js/runtime-main.aeb3bcad.js.map",
     "static/css/2.4707e12a.chunk.css": "/static/css/2.4707e12a.chunk.css",
-    "static/js/2.c92015f9.chunk.js": "/static/js/2.c92015f9.chunk.js",
-    "static/js/2.c92015f9.chunk.js.map": "/static/js/2.c92015f9.chunk.js.map",
+    "static/js/2.ec542522.chunk.js": "/static/js/2.ec542522.chunk.js",
+    "static/js/2.ec542522.chunk.js.map": "/static/js/2.ec542522.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.80084c313b3f8ca50d96a7c403208de7.js": "/precache-manifest.80084c313b3f8ca50d96a7c403208de7.js",
+    "precache-manifest.c7f05406b5970399ab8c0fe4b4ce9ad8.js": "/precache-manifest.c7f05406b5970399ab8c0fe4b4ce9ad8.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.4707e12a.chunk.css.map": "/static/css/2.4707e12a.chunk.css.map",
-    "static/css/main.2f141e42.chunk.css.map": "/static/css/main.2f141e42.chunk.css.map",
-    "static/js/2.c92015f9.chunk.js.LICENSE.txt": "/static/js/2.c92015f9.chunk.js.LICENSE.txt",
+    "static/css/main.a664862d.chunk.css.map": "/static/css/main.a664862d.chunk.css.map",
+    "static/js/2.ec542522.chunk.js.LICENSE.txt": "/static/js/2.ec542522.chunk.js.LICENSE.txt",
     "static/media/IMG_2757.jpg": "/static/media/IMG_2757.5884971d.jpg",
-    "static/media/app.scss": "/static/media/background-contact-page.f4872588.png",
+    "static/media/app.scss": "/static/media/background-hero.df148ea2.jpg",
     "static/media/allocat_screenshot.png": "/static/media/allocat_screenshot.248af44e.png",
-    "static/media/burrage_danielle-resume2021.pdf": "/static/media/burrage_danielle-resume2021.89ac7644.pdf",
+    "static/media/burragedanielleresume.pdf": "/static/media/burragedanielleresume.08b93b20.pdf",
     "static/media/petshop_screenshots.png": "/static/media/petshop_screenshots.fdcae3f9.png",
-    "static/media/portfolio-about-me-pictures.png": "/static/media/portfolio-about-me-pictures.b2f1cc70.png",
     "static/media/portfolio-textemphasis.png": "/static/media/portfolio-textemphasis.4c529b17.png",
     "static/media/schedulez_screenshot.png": "/static/media/schedulez_screenshot.c6778acb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.aeb3bcad.js",
     "static/css/2.4707e12a.chunk.css",
-    "static/js/2.c92015f9.chunk.js",
-    "static/css/main.2f141e42.chunk.css",
-    "static/js/main.3c729b81.chunk.js"
+    "static/js/2.ec542522.chunk.js",
+    "static/css/main.a664862d.chunk.css",
+    "static/js/main.e306107c.chunk.js"
   ]
 }
